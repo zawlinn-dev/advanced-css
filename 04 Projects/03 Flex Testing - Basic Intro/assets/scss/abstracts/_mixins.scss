@@ -1,0 +1,7 @@
+//  FLEX MIXIN
+
+@mixin d__flex($r: row, $j: flex-start, $a: flex-start) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+}

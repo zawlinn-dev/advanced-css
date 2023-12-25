@@ -1,0 +1,11 @@
+// GET FONT WEIGHT
+
+@function getFontWeight($list, $num) {
+  @return map-get($map: $list, $key: $num);
+}
+
+//  GET COLORS
+
+@function getColor($color) {
+  @return var(--#{$color});
+}

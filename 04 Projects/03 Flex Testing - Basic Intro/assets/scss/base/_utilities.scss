@@ -1,0 +1,7 @@
+// GENERATE COLORS
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}: #{$color};
+  }
+}

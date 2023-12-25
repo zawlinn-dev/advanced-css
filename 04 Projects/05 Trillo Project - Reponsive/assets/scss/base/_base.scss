@@ -1,0 +1,45 @@
+// ALL RESET
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// ROOT SECTION
+
+:root {
+  //   @include genMachine($colors);
+}
+
+html {
+  font-size: 62.5%; // 10px
+
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: $color__gery__dark--1;
+  background-image: linear-gradient(
+    to right bottom,
+    $color__primary--light,
+    $color__primary--dark
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+}

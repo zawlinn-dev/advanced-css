@@ -1,0 +1,26 @@
+{
+  "name": "06-grid-testing---basic-intro",
+  "version": "1.0.0",
+  "description": "Gird Testing - Basic Intro",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "watch:scss": "node-sass ./assets/scss/main.scss ./assets/css/main.css -w",
+    "start": "npm-run-all --parallel dev watch:scss",
+    "concat:css": "concat -o ./assets/css/main.concat.css ./assets/css/icon-fonts.css ./assets/css/main.css",
+    "compile:scss": "node-sass ./assets/scss/main.scss ./assets/css/main.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 version' ./assets/css/main.concat.css -o ./assets/css/main.prefix.css",
+    "compress:css": "node-sass ./assets/css/main.prefix.css ./assets/css/main.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:scss concat:css prefix:css compress:css"
+  },
+  "author": "jonnas schmedtmann",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "concat": "^1.0.3",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0"
+  }
+}

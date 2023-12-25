@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  background-color: #ccc;
+  height: 100vh;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.item {
+  padding: 30px;
+  margin: 30px;
+  background-color: #f1425d;
+  font-size: 40px;
+}
+
+.i2 {
+  height: 200px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
+}
+
+.i3 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.i4 {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}/*# sourceMappingURL=main.css.map */

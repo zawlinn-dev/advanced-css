@@ -1,0 +1,36 @@
+.container {
+  background-color: #ccc;
+  height: 100vh;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+}
+
+.item {
+  padding: 30px;
+  margin: 30px;
+  background-color: #f1425d;
+  font-size: 40px;
+}
+
+.i2 {
+  height: 200px;
+  flex: 0 1 300px;
+}
+
+.i3 {
+  order: 1;
+  flex: 1;
+}
+
+.i4 {
+  order: -1;
+}

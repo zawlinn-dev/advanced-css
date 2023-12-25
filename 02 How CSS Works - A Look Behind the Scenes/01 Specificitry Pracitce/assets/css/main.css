@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Specificities */
+
+body {
+  padding: 50px;
+}
+
+.button {
+  font-style: 20px;
+  color: #fff;
+  /* background-color: #00f !important;  */
+  background: #00f; /* Specificity (0,0,1,0) */
+}
+
+a {
+  /* background-color: #800080 !important; */
+  background-color: #800080; /* Specificity (0,0,0,1) */
+}
+
+#nav div.pull-right a.button {
+  background-color: #ff4500; /* Specificity (0,1,2,2) is applied */
+}
+
+#nav div.pull-right a.button:hover {
+  background-color: #078207; /* Specificity (0,1,3,2) is applied */
+}
+
+#nav a.button:hover {
+  background-color: #ffff00; /* Specificity (0,1,2,1) */
+}

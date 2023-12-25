@@ -1,0 +1,14 @@
+{
+  "name": "grid-tutorial",
+  "version": "1.0.0",
+  "description": "Grid Layout Training Course",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./assets/scss/main.scss ./assets/css/main.css -w"
+  },
+  "author": "zawlinn",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
